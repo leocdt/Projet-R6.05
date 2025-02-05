@@ -22,6 +22,7 @@
     "@hapipal/schwifty": "6.x.x",
     "joi": "17.x.x",
     "mysql": "^2.18.1",
+    "nodemailer": "^6.10.0",
     "objection": "2.x.x"
   },
   "peerDependencies": {
@@ -42,7 +43,7 @@
     "@hapipal/hpal-debug": "2.x.x",
     "@hapipal/toys": "3.x.x",
     "babel-eslint": "10.x.x",
-    "dotenv": "8.x.x",
+    "dotenv": "^8.6.0",
     "eslint": "7.x.x",
     "exiting": "6.x.x",
     "hapi-swagger": "14.x.x",
