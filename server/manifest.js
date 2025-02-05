@@ -20,8 +20,8 @@ module.exports = new Confidence.Store({
         debug: {
             $filter: 'NODE_ENV',
             $default: {
-                log: ['error', 'start'],
-                request: ['error', 'implementation']
+                log: ['error'],
+                request: ['error']
             },
             production: {
                 request: ['implementation']
@@ -52,8 +52,7 @@ module.exports = new Confidence.Store({
                                 password : process.env.DB_PASSWORD || 'hapi',
                                 database : process.env.DB_NAME || 'user',
                                 port     : process.env.DB_PORT || 3307
-                            },
-                            debug: true
+                            }
                         }
                     },
                     production : {
