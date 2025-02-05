@@ -21,7 +21,7 @@ module.exports = new Confidence.Store({
             $filter: 'NODE_ENV',
             $default: {
                 log: ['error', 'start'],
-                request: ['error']
+                request: ['error', 'implementation']
             },
             production: {
                 request: ['implementation']
@@ -50,9 +50,10 @@ module.exports = new Confidence.Store({
                                 host     : process.env.DB_HOST || '0.0.0.0',
                                 user     : process.env.DB_USER || 'root',
                                 password : process.env.DB_PASSWORD || 'hapi',
-                                database : process.env.DB_DATABASE || 'user',
+                                database : process.env.DB_NAME || 'user',
                                 port     : process.env.DB_PORT || 3307
-                            }
+                            },
+                            debug: true
                         }
                     },
                     production : {

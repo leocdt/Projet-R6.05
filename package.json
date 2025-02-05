@@ -12,7 +12,11 @@
   "scripts": {
     "start": "node server",
     "test": "lab -a @hapi/code -I \"__core-js_shared__,CSS,regeneratorRuntime,core\" -L",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "migrate": "knex migrate:latest",
+    "migrate:rollback": "knex migrate:rollback",
+    "migrate:make": "knex migrate:make",
+    "db:reset": "node scripts/reset-db.js && npm run migrate"
   },
   "dependencies": {
     "@hapi/boom": "^9.1.4",
@@ -47,7 +51,7 @@
     "eslint": "7.x.x",
     "exiting": "6.x.x",
     "hapi-swagger": "14.x.x",
-    "knex": "0.21.x",
+    "knex": "^0.21.21",
     "sqlite3": "5.x.x"
   }
 }
