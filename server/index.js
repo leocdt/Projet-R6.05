@@ -20,6 +20,16 @@ exports.deployment = async ({ start } = {}) => {
     return server;
 };
 
+const start = async () => {
+    const server = await exports.deployment();
+    await server.start();
+    
+    const { queueService } = server.services();
+    await queueService.startConsumer();
+    
+    console.log('Server running at:', server.info.uri);
+};
+
 if (require.main === module) {
 
     exports.deployment({ start: true });

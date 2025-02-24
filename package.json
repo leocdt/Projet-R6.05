@@ -24,6 +24,8 @@
     "@hapipal/haute-couture": "4.x.x",
     "@hapipal/schmervice": "^3.0.0",
     "@hapipal/schwifty": "6.x.x",
+    "amqplib": "^0.10.5",
+    "csv-stringify": "^6.5.2",
     "joi": "17.x.x",
     "mysql": "^2.18.1",
     "nodemailer": "^6.10.0",
