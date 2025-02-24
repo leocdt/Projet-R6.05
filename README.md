@@ -74,14 +74,14 @@ http://localhost:3000/documentation
 
 Les variables d'environnement sont déjà configurées dans le fichier `.env` : 
 
-# Configuration de l'email
+Configuration de l'email
 EMAIL_HOST=smtp.ethereal.email
 EMAIL_PORT=587
 EMAIL_USER=guillermo.harris@ethereal.email
 EMAIL_PASS=yFz9pCZMy3gMBkPqYH
 EMAIL_FROM="Filmotheque CL <noreply@filmothequeCL.com>"
 
-# Configuration de la base de données
+Configuration de la base de données
 DB_HOST=localhost
 DB_PORT=3307
 DB_USER=root
